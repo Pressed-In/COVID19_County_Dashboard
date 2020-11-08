@@ -1,5 +1,5 @@
 # COVID19_County_Dashboard
-County level dashboard of COVID19
+County level dashboard of COVID19 (Tableau)
 
 Data from [NY Times](https://github.com/nytimes/covid-19-data)
 
