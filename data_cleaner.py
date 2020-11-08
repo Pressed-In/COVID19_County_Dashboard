@@ -24,7 +24,7 @@ covid_df['daily_deaths'] = covid_df.groupby(['fips'])['deaths'].diff().fillna(co
 
 covid_df.update(covid_df.filter(items=['daily_cases', 'daily_deaths']).clip(lower=0)) ### For daily cases & deaily deaths, nothing below 0
 
-covid_df = covid_df[covid_df['fips'].notnull()]
+covid_df = covid_df[covid_df['fips'].notnull()] ### More filtering
 
 covid_df = covid_df[covid_df['state_abbr'].notnull()]
 
